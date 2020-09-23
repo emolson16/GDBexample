@@ -4,10 +4,10 @@ using namespace std;
 
 int findMax(int arr[], int n){
 
-  int max = 0; // set max to first element
+  int max = arr[0]; // set max to first element
 
   for(int i = 0; i < n; ++i){ // check each element to see if it's bigger than max
-    if(arr[i] > max){
+    if(arr[i] > max){ 
       max = arr[i];
     }
   }
@@ -18,10 +18,10 @@ int findMax(int arr[], int n){
 
 int main(){
 
-    int arr[5] = {-4, -2, -1, -6, -7};
+    int arr[5] = {-4, -2, -5, -6, -7};
     int maxNum = findMax(arr, 5);
 
-    if(maxNum++ == 0){
+    if(maxNum++ == -1){
       cout << "true" << endl;
     }
 
